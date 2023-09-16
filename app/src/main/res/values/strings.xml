@@ -4,4 +4,6 @@
     <string name="note_title">Note Title</string>
     <string name="note_subtitle" />
     <string name="type_note_here" />
+    <string name="my_notes" />
+    <string name="search_notes" />
 </resources>
