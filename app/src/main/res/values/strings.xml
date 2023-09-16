@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Notes</string>
+    <string name="title_activity_create_note">CreateNoteActivity</string>
+    <string name="note_title">Note Title</string>
+    <string name="note_subtitle" />
+    <string name="type_note_here" />
 </resources>
