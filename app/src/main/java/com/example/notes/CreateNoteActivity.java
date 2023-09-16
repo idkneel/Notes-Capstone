@@ -1,6 +1,10 @@
 package com.example.notes;
 
+import android.media.Image;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CreateNoteActivity extends AppCompatActivity
@@ -10,5 +14,14 @@ public class CreateNoteActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_note);
+
+        ImageView imageBack = findViewById(R.id.imageBack);
+        imageBack.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                onBackPressed();
+            }
+        });
     }
 }
