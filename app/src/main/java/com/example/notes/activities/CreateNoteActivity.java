@@ -1,4 +1,4 @@
-package com.example.notes;
+package com.example.notes.activities;
 
 import android.media.Image;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.notes.R;
 
 public class CreateNoteActivity extends AppCompatActivity
 {

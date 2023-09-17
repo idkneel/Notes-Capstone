@@ -1,4 +1,4 @@
-package com.example.notes;
+package com.example.notes.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.notes.R;
+import com.example.notes.activities.CreateNoteActivity;
 
 public class MainActivity extends AppCompatActivity {
         public static final int REQUEST_CODE_ADD_NOTE = 1;
