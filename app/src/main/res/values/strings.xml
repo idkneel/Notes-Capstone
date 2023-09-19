@@ -6,4 +6,5 @@
     <string name="type_note_here" />
     <string name="my_notes" />
     <string name="search_notes" />
+    <string name="miscellaneous">Miscellaneous</string>
 </resources>
