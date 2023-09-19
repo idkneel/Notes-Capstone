@@ -13,12 +13,12 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activities.CreateNoteActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
             android:name=".activities.MainActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateHidden"
             tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
