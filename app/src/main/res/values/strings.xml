@@ -2,10 +2,10 @@
     <string name="app_name">Notes</string>
     <string name="title_activity_create_note">CreateNoteActivity</string>
     <string name="note_title">Note Title</string>
-    <string name="note_subtitle" />
-    <string name="type_note_here" />
-    <string name="my_notes" />
-    <string name="search_notes" />
+    <string name="note_subtitle"> Note Subtitle</string>
+    <string name="type_note_here"> Type note here… </string>
+    <string name="my_notes"> My Notes</string>
+    <string name="search_notes"> Search Notes</string>
     <string name="miscellaneous">Miscellaneous</string>
     <string name="pick_color">Pick Color</string>
 </resources>
