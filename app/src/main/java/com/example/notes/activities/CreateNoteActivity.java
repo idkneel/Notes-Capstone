@@ -51,7 +51,7 @@ public class CreateNoteActivity extends AppCompatActivity
         inputNoteSubtitle = findViewById(R.id.inputNoteSubtitle);
         inputNoteText = findViewById(R.id.inputNote);
         textDateTime = findViewById(R.id.textDateTime);
-        viewSubtitleIndicator = findViewById(R.id.viewSubtitleIndicator)
+        viewSubtitleIndicator = findViewById(R.id.viewSubtitleIndicator);
 
         textDateTime.setText(
                 new SimpleDateFormat("EEEE, dd MMMM yyyy HH:mm a", Locale.getDefault())
@@ -160,7 +160,7 @@ public class CreateNoteActivity extends AppCompatActivity
                 selectedNoteColor = "#FF4842";
                 imageColor1.setImageResource(0);
                 imageColor2.setImageResource(0);
-                imageColor3.setImageResource(R.drawable.baseline_done_24;
+                imageColor3.setImageResource(R.drawable.baseline_done_24);
                 imageColor4.setImageResource(0);
                 imageColor5.setImageResource(0);
             }
