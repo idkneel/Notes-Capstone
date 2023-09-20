@@ -7,4 +7,5 @@
     <string name="my_notes" />
     <string name="search_notes" />
     <string name="miscellaneous">Miscellaneous</string>
+    <string name="pick_color">Pick Color</string>
 </resources>
