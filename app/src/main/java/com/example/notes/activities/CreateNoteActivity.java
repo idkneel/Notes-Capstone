@@ -113,7 +113,7 @@ public class CreateNoteActivity extends AppCompatActivity
         inputNoteText.setText(alreadyAvailableNote.getNoteText());
         textDateTime.setText(alreadyAvailableNote.getDateTime());
 
-        /*if(alreadyAvailableNote.getImagePath() != null && !alreadyAvailableNote.getImagePath().trim().isEmpty()) {
+        if(alreadyAvailableNote.getImagePath() != null && !alreadyAvailableNote.getImagePath().trim().isEmpty()) {
             imageNote.setImageBitmap(BitmapFactory.decodeFile(alreadyAvailableNote.getImagePath()));
             imageNote.setVisibility(View.VISIBLE);
             selectedImagePath = alreadyAvailableNote.getImagePath();
@@ -122,7 +122,7 @@ public class CreateNoteActivity extends AppCompatActivity
         if (alreadyAvailableNote.getWebLink() != null && !alreadyAvailableNote.getWebLink().trim().isEmpty()) {
             textWebURL.setText(alreadyAvailableNote.getWebLink());
             layoutWebURL.setVisibility(View.VISIBLE);
-        }*/
+        }
     }
 
     private void saveNote() {
@@ -382,7 +382,7 @@ public class CreateNoteActivity extends AppCompatActivity
                 public void onClick(View v) {
                     if(inputURL.getText().toString().trim().isEmpty()){
                         Toast.makeText(CreateNoteActivity.this, "Enter URL", Toast.LENGTH_SHORT).show();
-                    } else if (!Patterns.WEB_URL.matcher(inputURL.getText()).toString().matches()) {
+                    } else if (!Patterns.WEB_URL.matcher(inputURL.getText().toString()).matches()){
                         Toast.makeText(CreateNoteActivity.this, "Enter a valid URL", Toast.LENGTH_SHORT).show();
                     } else {
                         textWebURL.setText(inputURL.getText().toString());
