@@ -32,7 +32,6 @@ import com.example.notes.entities.Note;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.io.InputStream;
-import java.net.URI;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -316,7 +315,7 @@ public class CreateNoteActivity extends AppCompatActivity
                         imageNote.setImageBitmap(bitmap);
                         imageNote.setVisibility(View.VISIBLE);
 
-                        selectedImagePath = getPathFromUri(selectedImageUri)
+                        selectedImagePath = getPathFromUri(selectedImageUri);
                     } catch (Exception exception) {
                         Toast.makeText(this, exception.getMessage(), Toast.LENGTH_SHORT).show();
                     }

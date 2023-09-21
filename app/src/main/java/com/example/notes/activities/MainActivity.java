@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -14,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.notes.R;
-import com.example.notes.activities.CreateNoteActivity;
 import com.example.notes.adapters.NotesAdapter;
 import com.example.notes.database.NotesDatabase;
 import com.example.notes.entities.Note;
