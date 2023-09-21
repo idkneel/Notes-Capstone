@@ -41,7 +41,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
     }
 
     @Override
-    @SuppressLint("RecyclerView")
+    @SuppressLint("RecyclerView") // fixes the final int position
     public void onBindViewHolder(@NonNull NoteViewHolder holder, final int position) {
         holder.setNote(notes.get(position));
         holder.layoutNote.setOnClickListener(new View.OnClickListener() {
