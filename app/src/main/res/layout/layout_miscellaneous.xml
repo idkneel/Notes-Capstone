@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
     android:id="@+id/layoutMiscellaneous"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/background_miscellaneous"
-    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
     app:behavior_hideable="true">
-    <!--app:layout_behavior_peekHeight= "40dp" -->
-
 
     <TextView
         android:id="@+id/textMiscellaneous"
@@ -177,7 +180,7 @@
             android:textColor="@color/colorIcons"
             android:textSize="@dimen/_12ssp" />
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
@@ -187,14 +190,14 @@
         android:layout_marginBottom="@dimen/_10sdp"
         android:gravity="center_vertical"
         android:orientation="horizontal" >
-        
+
         <ImageView
             android:layout_width="@dimen/_22sdp"
             android:layout_height="@dimen/_22sdp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/baseline_language_24"
             app:tint="@color/colorIcons" />
-        
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -239,3 +242,5 @@
     </LinearLayout>
 
 </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
