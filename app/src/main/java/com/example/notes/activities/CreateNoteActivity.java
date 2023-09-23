@@ -57,6 +57,7 @@ public class CreateNoteActivity extends AppCompatActivity
     private static final int REQUEST_CODE_SELECT_IMAGE = 2;
 
     private AlertDialog dialogAddURL;
+    private AlertDialog dialogDeleteNote;
     private Note alreadyAvailableNote;
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -290,6 +291,16 @@ public class CreateNoteActivity extends AppCompatActivity
             }
         });
 
+        if (alreadyAvailableNote != null) {
+            layoutMiscellaneous.findViewById(R.id.layoutDeleteNote).setVisibility(View.VISIBLE);
+            layoutMiscellaneous.findViewById(R.id.layoutDeleteNote).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
+        }
+
         if (alreadyAvailableNote != null && alreadyAvailableNote.getColor() != null && !alreadyAvailableNote.getColor().trim().isEmpty()) {
             switch (alreadyAvailableNote.getColor()) {
                 case "#0047AB":
@@ -307,6 +318,16 @@ public class CreateNoteActivity extends AppCompatActivity
             }
         }
 
+    }
+
+    private void showDeleteNoteDialog() {
+        if (dialogDeleteNote == null) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(CreateNoteActivity.this);
+            View view = LayoutInflater.from(this).inflate(
+                    R.layout.layout_delete_note,
+                    (ViewGroup) findViewById(R.id.layoutDeleteNoteContainer)
+            );
+        }
     }
 
     private void setSubtitleIndicatorColor() {
