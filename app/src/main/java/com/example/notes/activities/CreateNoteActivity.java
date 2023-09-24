@@ -104,6 +104,14 @@ public class CreateNoteActivity extends AppCompatActivity
             setViewOrUpdateNote();
         }
 
+        findViewById(R.id.imageRemoveWebURL).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textWebURL.setText(null);
+                layoutWebURL.setVisibility(View.GONE);
+            }
+        });
+
         findViewById(R.id.imageRemoveImage).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
