@@ -112,13 +112,14 @@ android:layout_height="match_parent">
                 android:background="@drawable/background_note_color_4" />
 
             <ImageView
+                android:id="@+id/imageColor4"
                 android:layout_width="@dimen/_35sdp"
                 android:layout_height="@dimen/_35sdp"
-                android:id="@+id/imageColor4"
                 android:contentDescription="@string/app_name"
                 android:padding="@dimen/_10sdp"
                 android:src="@drawable/baseline_done_24"
-                app:tint="@color/colorWhite" />
+                app:tint="@color/colorWhite"
+                tools:ignore="ImageContrastCheck" />
 
         </FrameLayout>
 
@@ -161,7 +162,8 @@ android:layout_height="match_parent">
         android:id="@+id/layoutAddImage"
         android:layout_margin="@dimen/_10sdp"
         android:gravity="center_vertical"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="@dimen/_22sdp"
@@ -189,7 +191,8 @@ android:layout_height="match_parent">
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_10sdp"
         android:gravity="center_vertical"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="@dimen/_22sdp"
@@ -219,8 +222,8 @@ android:layout_height="match_parent">
         android:layout_marginBottom="@dimen/_10sdp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:visibility="gone"
-        tools:ignore="UseCompoundDrawables">
+        tools:ignore="UseCompoundDrawables"
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="@dimen/_22sdp"
