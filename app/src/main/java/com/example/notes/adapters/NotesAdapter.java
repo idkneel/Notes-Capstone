@@ -113,7 +113,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
 
     }
 
-    private void searchNotes (final String searchKeyword){
+    public void searchNotes(final String searchKeyword){
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override

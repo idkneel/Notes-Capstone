@@ -3,7 +3,7 @@ apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     namespace 'com.example.notes'
-    compileSdk 33
+    compileSdk 36
     //buildToolsRevision "33.0.2"
 
     defaultConfig {
