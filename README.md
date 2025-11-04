@@ -1,0 +1,1 @@
+A notes app created in android studio testing up to SDK 33 devices, with quick actions, delete notes, add image and URL, as well as being color coordinated and having a search function this app is an all around Notes app
